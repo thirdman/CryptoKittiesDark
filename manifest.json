@@ -1,9 +1,10 @@
 {
   "manifest_version": 2,
   "name": "CryptoKitties Dark Mode",
+  "short_name": "CK Dark",
+  "author": "Gareth Bedford",
   "version": "0.1",
   "description": "Dark Theme styling for CryptoKitties.co website",
-
   "background": {
     "scripts": [
       "background/file.js",
@@ -27,5 +28,10 @@
     "128": "images/icon128.png"
   },
 
-  "permissions": []
+  "permissions": ["activeTab"],
+  "applications": {
+    "gecko": {
+      "id": "cryptokittiesdark@thirdman.co.nz"
+    }
+  }
 }

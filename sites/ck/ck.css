@@ -53,15 +53,15 @@ a:hover {
   color: var(--colorHeadline);
 }
 /*link underlines: */
-.Footer-primary-dapperLabs a:after{
+.Footer-primary-dapperLabs a:after {
   background-color: var(--colorDarkLighter);
 }
-.Main .ProfileButton{
-  border-bottom: .2rem solid var(--colorDarkLighter);
+.Main .ProfileButton {
+  border-bottom: 0.2rem solid var(--colorDarkLighter);
   color: var(--colorMid);
 }
-.Main .ProfileButton:hover{
-  border-bottom: .2rem solid var(--colorDarkLighter);
+.Main .ProfileButton:hover {
+  border-bottom: 0.2rem solid var(--colorDarkLighter);
   color: var(--colorHeadline);
 }
 
@@ -78,7 +78,8 @@ a:hover {
   color: var(--colorHeadline);
 }
 
-.Main .TabNav-Tabs .TabNav-item:focus, .Main  .TabNav-Tabs .TabNav-item:hover {
+.Main .TabNav-Tabs .TabNav-item:focus,
+.Main .TabNav-Tabs .TabNav-item:hover {
   color: var(--colorHeadline);
 }
 
@@ -87,8 +88,8 @@ a:hover {
 .SearchBar-container {
   border-bottom-color: var(--colorDarkLighter);
 }
-.SearchBar-actionGroup{
-  border-right: .2rem solid var(--colorDarkLighter);
+.SearchBar-actionGroup {
+  border-right: 0.2rem solid var(--colorDarkLighter);
 }
 
 @media (min-width: 760px) {
@@ -203,8 +204,8 @@ g#Symbols g {
   border-color: var(--colorDarkLighter);
   box-shadow: 0 0.2rem 0 0 var(--colorDarkLighter);
 }
-.Main .SpecialBadge-title{
-  color: var(--colorHeadline)
+.Main .SpecialBadge-title {
+  color: var(--colorHeadline);
 }
 
 .Main .PurrButton {
@@ -215,10 +216,10 @@ g#Symbols g {
 }
 
 /* KITTY */
-@media (min-width: 480px){
-.KittyBio-dotted {
-    border-left: .2rem dotted var(--colorDarkLighter);
-    
+@media (min-width: 480px) {
+  .KittyBio-dotted {
+    border-left: 0.2rem dotted var(--colorDarkLighter);
+  }
 }
 /**
 * ACTIVITY
@@ -244,7 +245,8 @@ g#Symbols g {
 /**
 * MISC
 */
-.ProviderStatus-provider, .ProviderStatus-status{
+.ProviderStatus-provider,
+.ProviderStatus-status {
   color: var(--colorDarkLighter);
 }
 .Banner {

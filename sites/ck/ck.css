@@ -1,0 +1,276 @@
+/*   
+CK COLOURS
+#f3f1ee: text highlights and underlines. inverted = --colorDarkDarker:  but actually maybe makes more ui sense to be colorDarkLighter 
+#9c9c9b: roughcly --colorMid, but I havent seen this enough to be sure. Input text
+#2a2825: healine color
+#e7e6e4: borders and ui highloights: --colorDarkLighter:
+*/
+
+/* NOTES 
+Specificity
+- generally I've used .Main where I need to define higher specificity. sometime had to resort to !important, but I'm wary of doing that without knowing how UI will be effected
+*/
+
+:root {
+  /* --colorBg: #232323; */
+  /* --colorText: #ddd; */
+  /* --colorHeadline: #d0d0d0;  */
+  --colorDark: #161616;
+  --colorDarkDarker: #333;
+  --colorDarkLighter: #393939; /* #e7e6e4 ?*/
+  --colorBg: #1d1a21; /*this is more indigo*/
+  --colorText: hsla(264, 10%, 85%, 1);
+  --colorParagraph: hsl(269, 3%, 46%);
+  --colorHeadline: hsla(264, 10%, 85%, 1); /*ck: 2a2825*/
+  --colorMidDarker: #565656;
+  --colorMid: #999; /*rgb(42, 40, 37), #2a2825*/
+  --colorDarkDarker: #191919;
+
+  /*ck variables overrides*/
+  --color-shadow: red;
+}
+
+body {
+  background: var(--colorBg);
+  color: var(--colorText);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--colorHeadline);
+}
+
+p {
+  color: var(--colorParagraph);
+}
+
+a,
+a:hover {
+  color: var(--colorHeadline);
+}
+/*link underlines: */
+.Footer-primary-dapperLabs a:after{
+  background-color: var(--colorDarkLighter);
+}
+.Main .ProfileButton{
+  border-bottom: .2rem solid var(--colorDarkLighter);
+  color: var(--colorMid);
+}
+.Main .ProfileButton:hover{
+  border-bottom: .2rem solid var(--colorDarkLighter);
+  color: var(--colorHeadline);
+}
+
+/* TEXT && TITLES */
+.Cattribute-title,
+.KittiesFilter-group-title {
+  color: var(--colorHeadline) !important;
+}
+/* UI ELEMENTS */
+.TabNav-underline:before {
+  background-color: var(--colorDarkDarker) !important;
+}
+.TabNav-Container .TabNav-Tabs .TabNav-item.TabNav-item--active {
+  color: var(--colorHeadline);
+}
+
+.Main .TabNav-Tabs .TabNav-item:focus, .Main  .TabNav-Tabs .TabNav-item:hover {
+  color: var(--colorHeadline);
+}
+
+/* FORMS  & INPUTS*/
+
+.SearchBar-container {
+  border-bottom-color: var(--colorDarkLighter);
+}
+.SearchBar-actionGroup{
+  border-right: .2rem solid var(--colorDarkLighter);
+}
+
+@media (min-width: 760px) {
+  .Checkbox--checked .Checkbox-label,
+  .Checkbox:not(.Checkbox--disabled):hover .Checkbox-label {
+    color: var(--colorHeadline);
+  }
+}
+.Checkbox--checked .Checkbox-label,
+.Checkbox:not(.Checkbox--disabled):focus .Checkbox-label {
+  color: var(--colorHeadline);
+}
+
+.Select {
+  color: var(--colorHeadline);
+}
+
+input[type="number"].Number {
+  border: 0.2rem solid var(--colorDarkLighter);
+  color: var(--colorMid);
+}
+input[type="number"].Number:active,
+input[type="number"].Number:focus,
+input[type="number"].Number:hover {
+  color: var(--colorHeadline);
+  border: 0.2rem solid var(--colorMid);
+}
+/* SVG, LINKS AND LABELS */
+.Dropdown-link-label {
+  color: var(--colorHeadline);
+}
+.Dropdown-link-image svg g {
+  stroke: var(--colorMid);
+}
+
+.Dropdown-link-caret path {
+  fill: var(--colorMid);
+}
+
+g#Symbols g {
+  stroke: var(--colorMid);
+}
+
+/* TEXT */
+
+/* CARD */
+.KittyCard-details-item--highlight {
+  color: var(--colorHeadline);
+}
+.KittyCard-details-header {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(33%, var(--colorDarkLighter)),
+    color-stop(0, var(--colorBg))
+  );
+  background-image: linear-gradient(
+    90deg,
+    var(--colorDarkLighter) 33%,
+    var(--colorBg) 0
+  );
+}
+
+.SpecialKittiesGrid .SpecialKittyCard {
+  background-color: var(--colorDark);
+  border: 0.2rem solid var(--colorDark);
+}
+.SpecialKittiesGrid .SpecialKittyCard:hover {
+  border-color: var(--colorDarkLighter);
+  box-shadow: 0 0.2rem 0 0 var(--colorDarkLighter);
+}
+
+/*BUTTONS*/
+.ButtonV2 {
+  --color-main: var(--colorBg);
+  --color-text: var(--colorText);
+}
+.ButtonV2,
+.ButtonV2:active {
+  --color-shadow: var(--colorDarkLighter);
+}
+.ButtonV2--flat,
+.ButtonV2--flat:active {
+  --color-shadow: var(--colorDarkLighter);
+}
+.ButtonV2--flat:hover {
+  --color-shadow: var(--colorMidDarker);
+}
+.Pagination-button {
+  color: var(--colorHeadline);
+}
+.Pagination-button--disabled {
+  color: var(--colorDarkLighter);
+}
+.Pagination-page {
+  color: var(--colorText);
+}
+.ToggleButton {
+  color: var(--colorHeadline);
+}
+
+.Main .CollectionsManager-toggleBox-preview {
+  background: linear-gradient(
+    180deg,
+    var(--colorBg) 90%,
+    hsl(263, 14%, 11%)
+  ); /* hlsa = background color */
+}
+
+.Main .SpecialBadge {
+  border-color: var(--colorDarkLighter);
+  box-shadow: 0 0.2rem 0 0 var(--colorDarkLighter);
+}
+.Main .SpecialBadge-title{
+  color: var(--colorHeadline)
+}
+
+.Main .PurrButton {
+  background: var(--colorBg);
+}
+.Main .PurrButton:after {
+  box-shadow: inset 0 0 0 0.2rem var(--colorDarkLighter);
+}
+
+/* KITTY */
+@media (min-width: 480px){
+.KittyBio-dotted {
+    border-left: .2rem dotted var(--colorDarkLighter);
+    
+}
+/**
+* ACTIVITY
+*/
+.ActivityPage-activity .Activity {
+  border: 0.2rem solid var(--colorDarkLighter);
+}
+.Activity .Activity-details-text-link {
+  color: var(--colorHeadline);
+  border-bottom: 0.2rem solid var(--colorDarkLighter);
+}
+/**
+* FOOTER
+*/
+
+.Footer {
+  border-top: 0.2rem solid var(--colorDarkDarker);
+}
+
+/* MODALS */
+.Loader {
+}
+/**
+* MISC
+*/
+.ProviderStatus-provider, .ProviderStatus-status{
+  color: var(--colorDarkLighter);
+}
+.Banner {
+  background: var(--colorDark);
+  border-bottom-color: var(--colorDarkDarker);
+}
+
+.Main .ToggleBox-items {
+  border: 0.2rem solid var(--colorDarkLighter);
+  box-shadow: 0 0.2rem 0 0 var(--colorDarkLighter);
+}
+
+.Dropdown-content {
+  border: 0.2rem solid var(--colorDarkLighter) !important;
+  box-shadow: 0 0.2rem 0 0 var(--colorDarkLighter) !important;
+  background-color: var(--colorBg) !important;
+}
+
+.Dropdown-content-link:hover {
+  /* background-color:#f9f8f6 */
+  background-color: var(--colorDarkLighter);
+}
+.Dropdown-content-linkWrapper {
+  border-bottom: 0.2rem solid var(--colorDarkLighter);
+}
+
+.KittiesFilter-list-item {
+  background-color: var(--colorDark);
+}

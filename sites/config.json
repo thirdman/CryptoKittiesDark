@@ -2,27 +2,8 @@
   {
     "enable": true,
     "cache": false,
-    "match": ["stackoverflow.com"],
-    "inject": ["test.css"]
-  },
-  {
-    "enable": false,
-    "cache": false,
-    "match": ["abc.com"],
-    "inject": ["test.css"]
-  },
-  {
-    "enable": true,
-    "cache": false,
     "match": ["www.cryptokitties.co"],
     "inject": ["ck.css"],
     "location": "ck"
-  },
-  {
-    "enable": true,
-    "cache": false,
-    "match": ["github.com", "gist.github.com"],
-    "inject": ["dark-theme.css"],
-    "location": "github"
   }
 ]

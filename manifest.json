@@ -4,7 +4,7 @@
   "short_name": "CK Dark",
   "author": "Gareth Bedford",
   "version": "0.2",
-  "description": "Dark Theme styling for CryptoKitties.co website",
+  "description": "Dark Theme Styling",
   "background": {
     "scripts": [
       "background/file.js",
@@ -29,7 +29,7 @@
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
-  "permissions": ["activeTab"],
+  "permissions": ["https://www.cryptokitties.co/*"],
   "applications": {
     "gecko": {
       "id": "cryptokittiesdark@thirdman.co.nz"

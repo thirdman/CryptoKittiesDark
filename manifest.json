@@ -3,7 +3,7 @@
   "name": "CryptoKitties Dark Mode",
   "short_name": "CK Dark",
   "author": "Gareth Bedford",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Dark Theme styling for CryptoKitties.co website",
   "background": {
     "scripts": [
@@ -21,13 +21,14 @@
       "all_frames": true
     }
   ],
-
+  "browser_action": {
+    "default_popup": "popup/popup.html"
+  },
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
-
   "permissions": ["activeTab"],
   "applications": {
     "gecko": {

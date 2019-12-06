@@ -17,8 +17,14 @@ Specificity
   /* --colorHeadline: #d0d0d0;  */
   --colorDark: #161616;
   --colorDarkDarker: #333;
-  --colorDarkLighter: #393939; /* #e7e6e4 ?*/
-  --colorBg: #1d1a21; /*this is more indigo*/
+  /* --colorDarkLighter: #393939;  V1 */
+  --colorDarkLighter: #595a62;
+
+  /*--colorBg: #1d1a21; this is more indigo*/
+  /* --colorBg: #31323d; this is using the kitty dark outline */
+  --colorBg: #232635;
+  /* thisis requested */
+
   --colorText: hsla(264, 10%, 85%, 1);
   --colorParagraph: hsl(269, 3%, 46%);
   --colorHeadline: hsla(264, 10%, 85%, 1); /*ck: 2a2825*/
@@ -196,7 +202,7 @@ g#Symbols g {
   background: linear-gradient(
     180deg,
     var(--colorBg) 90%,
-    hsl(263, 14%, 11%)
+    var(--colorBg)
   ); /* hlsa = background color */
 }
 
@@ -213,6 +219,14 @@ g#Symbols g {
 }
 .Main .PurrButton:after {
   box-shadow: inset 0 0 0 0.2rem var(--colorDarkLighter);
+}
+.Main .PurrButton .PurrButton-text {
+  color: var(--colorHeadline);
+}
+
+/*ALL THE HIGHLIGTH COLOR LOCAITONS*/
+.KittyHeader-owner-name {
+  color: var(--colorHeadline);
 }
 
 /* KITTY */
@@ -236,12 +250,44 @@ g#Symbols g {
 */
 
 .Footer {
-  border-top: 0.2rem solid var(--colorDarkDarker);
+  border-top: 0.2rem solid var(--colorDarkLighter);
 }
-
+.Footer-primary-dapperLabs a {
+  color: var(--colorMid);
+}
 /* MODALS */
 .Loader {
 }
+
+/**
+CKBOX
+*/
+
+.ckbox-CommunityBadgeIcon {
+  background: #666;
+  border-color: #333;
+}
+.ckbox-KittiesToolbar {
+}
+.ckbox-Toolbar {
+  border-top: 0.2rem solid var(--colorDarkLighter);
+}
+.ckbox-ToolbarItems {
+  border-bottom: 0.2rem solid var(--colorDarkLighter);
+}
+.ckbox-ToolbarItem.ckbox-Active {
+  color: var(--colorHeadline) !important;
+}
+
+.ckbox-CardTopContainer {
+  border-color: var(--colorDarkLighter);
+  background-color: var(--colorDarkLighter);
+}
+.ckbox-CardTopGeneHideButton {
+  background-color: var(--colorDarkLighter);
+  border-color: var(--colorDarkLighter);
+}
+
 /**
 * MISC
 */

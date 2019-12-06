@@ -1,0 +1,20 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.2rem;
+}
+.swatch {
+  border: 2px solid white;
+  background: #eee;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  min-width: 23px;
+  min-height: 22px;
+  border-radius: 2px;
+}
+.optionButton {
+  border-radius: 20px;
+  background: #eee;
+  border: none;
+}

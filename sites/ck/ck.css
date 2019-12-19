@@ -173,12 +173,12 @@ g#Symbols g {
 }
 
 /* // KittySection */
-.KittySection .content .KittyBid {
+.Main .KittyBid {
   background: var(--colorDarkDarker);
   border: 0.2rem solid var(--colorDarkLighter);
 }
-.KittyBid-box-title,
-.KittyBid-box-subtitle {
+.Main .KittyBid-box-title,
+.Main .KittyBid-box-subtitle {
   color: var(--color-text);
 }
 

@@ -3,7 +3,7 @@
   "name": "CryptoKitties Dark Mode",
   "short_name": "CK Dark",
   "author": "Gareth Bedford",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Dark Theme Styling",
   "background": {
     "scripts": [

@@ -4,6 +4,8 @@ CK COLOURS
 #9c9c9b: roughcly --colorMid, but I havent seen this enough to be sure. Input text
 #2a2825: healine color
 #e7e6e4: borders and ui highloights: --colorDarkLighter:
+#fba371:     --color-highlight
+#fcfbfa: almost white: go tot darkdarker?
 */
 
 /* NOTES 
@@ -31,9 +33,10 @@ Specificity
   --colorMidDarker: #565656;
   --colorMid: #999; /*rgb(42, 40, 37), #2a2825*/
   --colorDarkDarker: #191919;
-
+  --colorHighlight: pink;
   /*ck variables overrides*/
   --color-shadow: red;
+  --color-highlight: var(--colorHighlight);
 }
 
 body {
@@ -169,6 +172,16 @@ g#Symbols g {
   box-shadow: 0 0.2rem 0 0 var(--colorDarkLighter);
 }
 
+/* // KittySection */
+.KittySection .content .KittyBid {
+  background: var(--colorDarkDarker);
+  border: 0.2rem solid var(--colorDarkLighter);
+}
+.KittyBid-box-title,
+.KittyBid-box-subtitle {
+  color: var(--color-text);
+}
+
 /*BUTTONS*/
 .ButtonV2 {
   --color-main: var(--colorBg);
@@ -288,6 +301,16 @@ CKBOX
   border-color: var(--colorDarkLighter);
 }
 
+.ckbox-HistoryTable td {
+  border-bottom: 1px solid var(--colorDarkLighter);
+}
+.ckbox-TxLink {
+  background-color: var(--colorDarkLighter);
+}
+.ckb-Gen0Emphasize,
+.ckbox-HistoryPrice {
+  color: #fff;
+}
 /**
 * MISC
 */
@@ -321,4 +344,7 @@ CKBOX
 
 .KittiesFilter-list-item {
   background-color: var(--colorDark);
+}
+
+.KittyHeader-details-item--chinese {
 }
